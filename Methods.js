@@ -22,5 +22,26 @@ const person = {
         this.gender = gender;
         this.skill = skill;
     }
+
+    //Solution 1: Display via console.log
+    displayInfo() { //Process and Output
+        console.log("Name: " + this.name);
+        console.log("Age: "  + this.age);
+        console.log("Gender: " + this.gender);
+        console.log("Skill: " + this.skill);
+    }
+
+    //Solution 2: Display via HTML
+    displayViaHTML() {
+        const personElement = document.getElementById('person1'); 
+      personElement.innerHTML = `
+        <strong>Name:</strong> ${this.name}<br>
+        <strong>Age:</strong> ${this.age}<br>
+        <strong>Age:</strong> ${this.gender}<br>
+        <strong>Gender:</strong> ${this.skill}
+        `;
+    }
+
+    
 }
     
