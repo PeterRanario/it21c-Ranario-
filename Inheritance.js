@@ -52,3 +52,29 @@ class Person {
     }
 
 }
+
+        class student extends Person {
+
+             //Constructor
+             constructor(name, age, gender, nickname, year, degree) {
+                super(name, age, gender, nickname);
+                this.year = year;
+                this.degree = degree; 
+            }
+
+            //Overriding the displayInfo method from Person class
+            displayInfo() {
+                super.displayInfo();
+                console.log("Year: " + this.year);
+                console.log("Degree: " + this.degree);
+            }
+
+            displayInfoViaHTML() {
+                super.displayInfoViaHTML();
+                const personElement = document.getElementById('person1');
+                personElement.innerHTML += `
+                <br> <strong> Year: </strong> ${this.year} <br>
+                <strong> Degree: </strong> ${this.degree}
+                `;
+            }
+        }
