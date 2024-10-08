@@ -7,6 +7,7 @@ class Person {
     #height;
     #skill;
 
+    
     constructor(name, age, gender, height, skill) {
         this.#name = name;
         this.#age = age;
