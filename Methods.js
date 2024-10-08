@@ -44,4 +44,11 @@ const person = {
 
     
 }
+
+    // Create an instance of Person
+    const person1 = new Person("Strygwyr", 19, "Male", "Rupture");
+
+    //Calls the method
+    person1.displayInfo();
+
     
