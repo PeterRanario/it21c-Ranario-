@@ -14,5 +14,21 @@ class Person {
     this.nickname = nickname;
     }
 
-    
+    //getters method
+    get name() {
+        return this.#name;
+    }
+
+    get age() {
+        return this.#age;
+    }
+
+    get gender() {
+        return this.#gender;
+    }
+
+    get nickname() {
+        return this.#nickname;
+    }
+
 }
