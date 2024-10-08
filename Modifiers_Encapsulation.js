@@ -29,7 +29,7 @@ class Person {
     get height() {
         return this.#height;
     }
-    get weight() {
+    get skill() {
         return this.#skill;
     }
 
@@ -39,6 +39,12 @@ class Person {
         console.log("Age: " + this.age);
         console.log("Gender: " + this.gender);
         console.log("Height: " + this.height);
-        console.log("Weight: " + this.skill);
+        console.log("Skill: " + this.skill);
     }
 }
+
+//Creating an instance of the Person Class
+const person1 = new Person("Strygwyr", 18, "Male", '6footer', "Culling Blade");
+
+//Calling methods
+person1.displayInfo();
