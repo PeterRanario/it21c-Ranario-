@@ -45,6 +45,27 @@
             get weight() {
                 return this.#skill;
             }
+
+            //Displays output via Console.log
+            displayInfo() {
+                console.log("Name: " + this.name);
+                console.log("Age: " + this.age);
+                console.log("Gender: " + this.gender);
+                console.log("Height: " + this.height);
+                console.log("Weight: " + this.skill);
+            }
+
+            //Displays output via HTML
+            displayInfoViaHTML() {
+                const personElement = document.getElementById('person1');
+                personElement.innerHTML = `
+                  <strong>Name: </strong> ${this.name} <br>
+                  <strong>Age: </strong> ${this.age} <br>
+                  <strong>Gender:</strong> ${this.gender} <br>
+                  <strong>Height:</strong> ${this.height} <br>
+                  <strong>Weight: </strong> ${this.skill} 
+                `;
+            }
         }
 
         
