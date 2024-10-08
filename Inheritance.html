@@ -84,13 +84,20 @@
 
             displayInfoViaHTML() {
                 super.displayInfoViaHTML();
-                const personElement = document.getElementById('person1');
+                const personElement = document.getElementById('student1');
                 personElement.innerHTML += `
                 <br> <strong> Year: </strong> ${this.year} <br>
                 <strong> Degree: </strong> ${this.degree}
                 `;
             }
         }
+
+        //Declaring an instance to access the Student class
+        const student1 = new Student('Axe', 20, 'Male', 'aksiii' , '2nd year', 'BSIT');
+
+        //Calling methods
+        student1.displayInfo();
+        student1.displayInfoViaHTML();
 
 
 
