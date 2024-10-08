@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Yoooww</h1>
+    <h1>Calling outputs through methods</h1>
+    <h1 id="person1"></h1>
+    <script>
+        //Input and creating a class named Person
+        class Person {
+
+            constructor(name, age, gender, skill) {
+                 this.name = name;
+                 this.age = age;
+                 this.gender = gender;
+                 this.skill = skill;
+             }
+
+             //Solution 1: Display via console.log
+            displayInfo() { //Process and Output
+                console.log("Name: " + this.name);
+                console.log("Age: "  + this.age);
+                console.log("Gender: " + this.gender);
+                console.log("Skill: " + this.skill);
+            }
+
+            //Solution 2: Display via HTML
+            displayViaHTML() {
+                const personElement = document.getElementById('person1'); 
+              personElement.innerHTML = `
+                <strong>Name:</strong> ${this.name}<br>
+                <strong>Age:</strong> ${this.age}<br>
+                <strong>Age:</strong> ${this.gender}<br>
+                <strong>Gender:</strong> ${this.skill}
+                `;
+            }
+
+        }
+        
+        // Create an instance of Person
+        const person1 = new Person("Strygwyr", 19, "Male", "Rupture");
+
+        //Calls the method
+        person1.displayInfo();
+        person1.displayViaHTML();
+
+    </script>
+</body>
+</html>
+
+
+        
