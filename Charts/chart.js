@@ -80,7 +80,7 @@ class BarChart extends ChartCreator {
             data: {
                 labels: this.chartData.labels,
                 datasets: [{
-                    label: 'cute points',
+                    label: 'collected points',
                     data: this.chartData.data,
                     borderWidth: 1
                 }]
