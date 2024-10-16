@@ -64,6 +64,16 @@ class LineChart extends ChartCreator {
     }
 }
 
+class BarChart extends ChartCreator {
+    constructor(dataUrl) {
+        super(dataUrl);
+        this.barCtx = document.getElementById('barChart');
+    }
+  
+    createCharts() {
+        this.createBarChart();
+    }
+}
 const lineChartCreator = new LineChart('data.json');
 lineChartCreator.init();
 
