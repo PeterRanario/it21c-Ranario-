@@ -63,3 +63,8 @@ class LineChart extends ChartCreator {
         });
     }
 }
+
+const lineChartCreator = new LineChart('data.json');
+lineChartCreator.init();
+
+console.log(lineChartCreator.dataUrl);
