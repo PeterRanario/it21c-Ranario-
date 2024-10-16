@@ -22,10 +22,10 @@
         }
 
         .charts-card {
-            background-color: #1e1e1e;
+            background-color: #29ffd1;
             border-radius: 10px;
             padding: 20px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 20px rgba(126, 118, 118, 0.5);
             transition: transform 0.3s;
         }
 
@@ -34,7 +34,7 @@
         }
 
         h5.card-title {
-            color: #007771;
+            color: #000000;
             text-align: center; 
             margin-bottom: 1.5rem; 
         }
@@ -46,6 +46,11 @@
     </style>
 </head>
 <body>
-    
+    <div class="card charts-card">
+        <div class="card-body">
+            <h5 class="card-title">Area Chart</h5>
+            <canvas id="areaChart"></canvas>
+        </div>
+    </div>  
 </body>
 </html>
